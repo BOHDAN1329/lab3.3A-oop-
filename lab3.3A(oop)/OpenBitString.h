@@ -1,0 +1,16 @@
+//OpenBitString.h
+#pragma once
+#include "BaseBitString.h"
+class OpenBitString :
+	public BaseBitString
+{
+	public :
+		OpenBitString operator ++();
+		OpenBitString operator --();
+		OpenBitString operator ++(int);
+		OpenBitString operator --(int);
+
+		friend OpenBitString operator ^ (OpenBitString obj1, OpenBitString obj2);
+		
+};
+
